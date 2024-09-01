@@ -1,0 +1,837 @@
+{"duration_ms":"79121922","share_with_app_devs":1,"roots_installed":0,"bug_type":"145","os_version":"iPhone OS 18.0 (22A5346a)","slice_uuid":"07084264-76E9-3532-85FA-C9C77C3BD0E3","is_first_party":0,"incident_id":"64497088-3401-456C-9A2B-0B1B1F888A4E","timestamp":"2024-08-23 08:28:09.00 -0500","app_name":"symptomsd-diag","name":"symptomsd-diag"}
+Date/Time:        2024-08-22 10:29:24.601 -0500
+End time:         2024-08-23 08:28:06.523 -0500
+OS Version:       iPhone OS 18.0 (Build 22A5346a)
+Architecture:     arm64e
+Report Version:   53
+Incident Identifier: 64497088-3401-456C-9A2B-0B1B1F888A4E
+Share With Devs:  Yes
+
+Data Source:      Microstackshots
+Shared Cache:     009594F6-64F5-317A-8DDB-813A90CCC3E2 slid base address 0x191e24000, slide 0x11e24000
+
+Command:          symptomsd-diag
+Path:             /usr/libexec/symptomsd-diag
+Resource Coalition: 616
+On Behalf Of:     93 samples symptomsd [142] (63 samples originated by CommCenter [98], 30 samples originated by symptomsd [142])
+Architecture:     arm64
+PID:              409
+
+Event:            disk writes
+Action taken:     none
+Writes:           1073.76 MB of file backed memory dirtied over 79122 seconds (13.57 KB per second average), exceeding limit of 12.43 KB per second over 86400 seconds
+Writes limit:     1073.74 MB
+Limit duration:   86400s
+Writes caused:    1073.76 MB
+Writes duration:  79122s
+Duration:         79121.92s
+Duration Sampled: 79070.01s (event starts 51.59s before samples, event ends 0.32s after samples)
+Steps:            16611 (10.49 MB/step)
+
+Hardware model:   iPhone14,3
+Active cpus:      6
+HW page size:     16384
+VM page size:     16384
+
+OS Cryptex File Extents: 22278
+
+Heaviest stack for the target process:
+  93  ??? (libsystem_pthread.dylib + 5256) [0x21bd02488]
+  93  ??? (libsystem_pthread.dylib + 19580) [0x21bd05c7c]
+  93  ??? (libdispatch.dylib + 92836) [0x19c8c3aa4]
+  93  ??? (libdispatch.dylib + 94808) [0x19c8c4258]
+  93  ??? (libdispatch.dylib + 49632) [0x19c8b91e0]
+  93  ??? (libdispatch.dylib + 46808) [0x19c8b86d8]
+  93  ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+  93  ??? (libdispatch.dylib + 9072) [0x19c8af370]
+  93  ??? (AutoBugCaptureCore + 164128) [0x218501120]
+  93  ??? (AutoBugCaptureCore + 145320) [0x2184fc7a8]
+  92  ??? (AutoBugCaptureCore + 459644) [0x21854937c]
+  92  ??? (AutoBugCaptureCore + 462296) [0x218549dd8]
+  92  ??? (libarchive.2.dylib + 419664) [0x218173750]
+  92  ??? (libarchive.2.dylib + 370548) [0x218167774]
+  92  ??? (libarchive.2.dylib + 382096) [0x21816a490]
+  92  ??? (libarchive.2.dylib + 370448) [0x218167710]
+  92  ??? (libarchive.2.dylib + 371624) [0x218167ba8]
+  92  ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+
+
+Powerstats for:   symptomsd-diag [409]
+UUID:             07084264-76E9-3532-85FA-C9C77C3BD0E3
+Path:             /usr/libexec/symptomsd-diag
+Resource Coalition: 93 samples 616
+On Behalf Of:     93 samples symptomsd [142] (63 samples originated by CommCenter [98], 30 samples originated by symptomsd [142])
+Architecture:     arm64
+Footprint:        5280 KB
+Pageins:          704 pages
+Start time:       2024-08-22 21:54:41.205 -0500
+End time:         2024-08-23 08:28:04.639 -0500
+Num samples:      93 (1%)
+Num threads:      2
+Primary state:    93 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Utility, Requested Thread QoS Utility, Override Thread QoS Unspecified, e-core
+User Activity:    93 samples Idle, 0 samples Active
+Power Source:     30 samples on Battery, 63 samples on AC
+  93  ??? (libsystem_pthread.dylib + 5256) [0x21bd02488]
+    93  ??? (libsystem_pthread.dylib + 19580) [0x21bd05c7c]
+      93  ??? (libdispatch.dylib + 92836) [0x19c8c3aa4]
+        93  ??? (libdispatch.dylib + 94808) [0x19c8c4258]
+          93  ??? (libdispatch.dylib + 49632) [0x19c8b91e0]
+            93  ??? (libdispatch.dylib + 46808) [0x19c8b86d8]
+              93  ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                93  ??? (libdispatch.dylib + 9072) [0x19c8af370]
+                  93  ??? (AutoBugCaptureCore + 164128) [0x218501120]
+                    93  ??? (AutoBugCaptureCore + 145320) [0x2184fc7a8]
+                      92  ??? (AutoBugCaptureCore + 459644) [0x21854937c]
+                        92  ??? (AutoBugCaptureCore + 462296) [0x218549dd8]
+                          92  ??? (libarchive.2.dylib + 419664) [0x218173750]
+                            92  ??? (libarchive.2.dylib + 370548) [0x218167774]
+                              92  ??? (libarchive.2.dylib + 382096) [0x21816a490]
+                                92  ??? (libarchive.2.dylib + 370448) [0x218167710]
+                                  92  ??? (libarchive.2.dylib + 371624) [0x218167ba8]
+                                    92  ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                                      62  <on behalf of symptomsd [142] (originated by CommCenter [98])>
+                                      30  <on behalf of symptomsd [142] (originated by symptomsd [142])>
+                      1   ??? (AutoBugCaptureCore + 460280) [0x2185495f8]
+                        1   ??? (Foundation + 2320500) [0x193a1e874]
+                          1   ??? (Foundation + 5867604) [0x193d80854]
+                            1   ??? (Foundation + 3325172) [0x193b13cf4]
+                              1   ??? (libremovefile.dylib + 5336) [0x238ef74d8]
+                                1   ??? (libremovefile.dylib + 5868) [0x238ef76ec]
+                                  1   ??? (libsystem_kernel.dylib + 28412) [0x1e4868efc]
+                                    1   <on behalf of symptomsd [142] (originated by CommCenter [98])>
+
+  Binary Images:
+           0x104ac0000 -                ???  symptomsd-diag          <07084264-76E9-3532-85FA-C9C77C3BD0E3>  /usr/libexec/symptomsd-diag
+           0x1937e8000 -        0x194506fff  Foundation              <4128867E-FE6F-346B-94E8-7EA49B0983B7>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x19c8ad000 -        0x19c8f2fff  libdispatch.dylib       <B8C15E69-D076-317D-9296-1279500738FC>  /usr/lib/system/libdispatch.dylib
+           0x1e4862000 -        0x1e489bffb  libsystem_kernel.dylib  <8D929B3B-D4D6-39BF-ADBB-BE59E928B332>  /usr/lib/system/libsystem_kernel.dylib
+           0x21810d000 -        0x218195ffb  libarchive.2.dylib      <DD5ADE85-DB3B-3303-8298-91276780325B>  /usr/lib/libarchive.2.dylib
+           0x2184d9000 -        0x21858efff  AutoBugCaptureCore      <752F1B18-6599-3F3D-8AE1-CEA8AE1F46DB>  /System/Library/PrivateFrameworks/AutoBugCaptureCore.framework/AutoBugCaptureCore
+           0x21bd01000 -        0x21bd0dff3  libsystem_pthread.dylib <FCC77EB0-558F-3703-9267-5419C4D33AE7>  /usr/lib/system/libsystem_pthread.dylib
+           0x238ef6000 -        0x238ef8fff  libremovefile.dylib     <35D4FEFA-CF03-3AAA-87FF-7151E53DB6FA>  /usr/lib/system/libremovefile.dylib
+
+
+Powerstats for:   abm-helper
+UUID:             AA8EBB25-5216-3976-A7D4-B5652D7CE930
+Path:             /System/Library/PrivateFrameworks/ABMHelper.framework/Support/abm-helper
+Resource Coalition: 8263 samples 269
+On Behalf Of:     343 samples CommCenter [98] (197 samples originated by CommCenter [98], 146 samples originated by symptomsd [142])
+Architecture:     arm64
+Start time:       2024-08-22 10:30:16.193 -0500
+End time:         2024-08-23 08:28:06.200 -0500
+Num samples:      8263 (50%)
+Primary state:    7826 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Background, Requested Thread QoS Default, Override Thread QoS Unspecified, e-core
+User Activity:    5276 samples Idle, 2987 samples Active
+Power Source:     7326 samples on Battery, 937 samples on AC
+  8263  ??? (libsystem_pthread.dylib + 5256) [0x21bd02488]
+    8263  ??? (libsystem_pthread.dylib + 19580) [0x21bd05c7c]
+      8263  ??? (libdispatch.dylib + 92836) [0x19c8c3aa4]
+        8263  ??? (libdispatch.dylib + 94808) [0x19c8c4258]
+          8263  ??? (libdispatch.dylib + 49632) [0x19c8b91e0]
+            8263  ??? (libdispatch.dylib + 46808) [0x19c8b86d8]
+              8263  ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                7824  ??? (libdispatch.dylib + 9072) [0x19c8af370]
+                  7723  ??? (BasebandTraceHelper + 289936) [0x2550eac90]
+                    7605  ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                      89    <Effective Thread QoS Default>
+                      1     <User mode>
+                    105   ??? (libsystem_kernel.dylib + 37272) [0x1e486b198]
+                      2     <Effective Thread QoS Default>
+                    13    ??? (BasebandTraceHelper + 204296) [0x2550d5e08]
+                      13    ??? (libsystem_kernel.dylib + 29132) [0x1e48691cc]
+                  90    ??? (BasebandTraceHelper + 290596) [0x2550eaf24]
+                    90    ??? (libc++.1.dylib + 152980) [0x1a5136594]
+                      90    ??? (libc++.1.dylib + 216648) [0x1a5145e48]
+                        90    ??? (libsystem_c.dylib + 50668) [0x19c8ff5ec]
+                          90    ??? (libsystem_c.dylib + 51376) [0x19c8ff8b0]
+                            90    ??? (libsystem_c.dylib + 57124) [0x19c900f24]
+                              90    ??? (libsystem_kernel.dylib + 32240) [0x1e4869df0]
+                                1     <Effective Thread QoS Default>
+                  9     ??? (BasebandTraceHelper + 290264) [0x2550eadd8]
+                    9     ??? (libc++.1.dylib + 210988) [0x1a514482c]
+                      9     ??? (libsystem_c.dylib + 48780) [0x19c8fee8c]
+                        9     ??? (libsystem_kernel.dylib + 29036) [0x1e486916c]
+                  2     ??? (ABMHelper + 1168052) [0x1b77c32b4]
+                    1     ??? (ABMHelper + 1171520) [0x1b77c4040]
+                      1     ??? (ABMHelper + 935724) [0x1b778a72c]
+                        1     ??? (BasebandTraceHelper + 273248) [0x2550e6b60]
+                          1     ??? (libdispatch.dylib + 79696) [0x19c8c0750]
+                            1     ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                              1     ??? (BasebandTraceHelper + 273460) [0x2550e6c34]
+                                1     ??? (BasebandTraceHelper + 275780) [0x2550e7544]
+                                  1     ??? (BasebandTraceHelper + 281740) [0x2550e8c8c]
+                                    1     ??? (libsystem_c.dylib + 146220) [0x19c916b2c]
+                                      1     ??? (libsystem_kernel.dylib + 28412) [0x1e4868efc]
+                                        1     <on behalf of CommCenter [98] (originated by symptomsd [142]), Effective Thread QoS Default>
+                    1     ??? (ABMHelper + 1170796) [0x1b77c3d6c]
+                      1     ??? (ABMHelper + 935724) [0x1b778a72c]
+                        1     ??? (BasebandTraceHelper + 273248) [0x2550e6b60]
+                          1     ??? (libdispatch.dylib + 79696) [0x19c8c0750]
+                            1     ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                              1     ??? (BasebandTraceHelper + 273460) [0x2550e6c34]
+                                1     ??? (BasebandTraceHelper + 275780) [0x2550e7544]
+                                  1     ??? (BasebandTraceHelper + 281740) [0x2550e8c8c]
+                                    1     ??? (libsystem_c.dylib + 146220) [0x19c916b2c]
+                                      1     ??? (libsystem_kernel.dylib + 28412) [0x1e4868efc]
+                                        1     <on behalf of CommCenter [98] (originated by CommCenter [98]), Effective Thread QoS Default, p-core>
+                341   ??? (ABMHelper + 866088) [0x1b7779728]
+                  341   ??? (ABMHelper + 854880) [0x1b7776b60]
+                    337   ??? (ABMHelper + 859304) [0x1b7777ca8]
+                      337   ??? (ABMHelper + 863108) [0x1b7778b84]
+                        289   ??? (ABMHelper + 862900) [0x1b7778ab4]
+                          287   ??? (ABMHelper + 864920) [0x1b7779298]
+                            287   ??? (libarchive.2.dylib + 442888) [0x218179208]
+                              287   ??? (libarchive.2.dylib + 370548) [0x218167774]
+                                284   ??? (libarchive.2.dylib + 371624) [0x218167ba8]
+                                  284   ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                                    165   <on behalf of CommCenter [98] (originated by CommCenter [98]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                                    119   <on behalf of CommCenter [98] (originated by symptomsd [142]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                                3     ??? (libarchive.2.dylib + 371556) [0x218167b64]
+                                  3     ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                                    2     <on behalf of CommCenter [98] (originated by CommCenter [98]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                                    1     <on behalf of CommCenter [98] (originated by symptomsd [142]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                          2     ??? (ABMHelper + 864736) [0x1b77791e0]
+                            1     ??? (libarchive.2.dylib + 373380) [0x218168284]
+                              1     ??? (libarchive.2.dylib + 442660) [0x218179124]
+                                1     ??? (libarchive.2.dylib + 370548) [0x218167774]
+                                  1     ??? (libarchive.2.dylib + 371556) [0x218167b64]
+                                    1     ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                                      1     <on behalf of CommCenter [98] (originated by CommCenter [98]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                            1     ??? (libarchive.2.dylib + 373176) [0x2181681b8]
+                              1     ??? (libarchive.2.dylib + 373500) [0x2181682fc]
+                                1     ??? (libarchive.2.dylib + 443012) [0x218179284]
+                                  1     ??? (libarchive.2.dylib + 370680) [0x2181677f8]
+                                    1     ??? (libarchive.2.dylib + 371556) [0x218167b64]
+                                      1     ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                                        1     <on behalf of CommCenter [98] (originated by CommCenter [98]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                        48    ??? (ABMHelper + 863108) [0x1b7778b84]
+                          48    ??? (ABMHelper + 862900) [0x1b7778ab4]
+                            48    ??? (ABMHelper + 864920) [0x1b7779298]
+                              48    ??? (libarchive.2.dylib + 442888) [0x218179208]
+                                48    ??? (libarchive.2.dylib + 370548) [0x218167774]
+                                  47    ??? (libarchive.2.dylib + 371624) [0x218167ba8]
+                                    47    ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                                      24    <on behalf of CommCenter [98] (originated by CommCenter [98]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                                      23    <on behalf of CommCenter [98] (originated by symptomsd [142]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                                  1     ??? (libarchive.2.dylib + 371556) [0x218167b64]
+                                    1     ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                                      1     <on behalf of CommCenter [98] (originated by symptomsd [142]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                    4     ??? (ABMHelper + 860592) [0x1b77781b0]
+                      4     ??? (libTelephonyUtilDynamic.dylib + 195552) [0x1a3d8cbe0]
+                        4     ??? (libTelephonyUtilDynamic.dylib + 196344) [0x1a3d8cef8]
+                          4     ??? (libTelephonyUtilDynamic.dylib + 195552) [0x1a3d8cbe0]
+                            3     ??? (libTelephonyUtilDynamic.dylib + 196200) [0x1a3d8ce68]
+                              3     ??? (libTelephonyUtilDynamic.dylib + 195300) [0x1a3d8cae4]
+                                3     ??? (libsystem_c.dylib + 146220) [0x19c916b2c]
+                                  3     ??? (libsystem_kernel.dylib + 28412) [0x1e4868efc]
+                                    2     <on behalf of CommCenter [98] (originated by CommCenter [98]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                                    1     <on behalf of CommCenter [98] (originated by symptomsd [142]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                            1     ??? (libTelephonyUtilDynamic.dylib + 196344) [0x1a3d8cef8]
+                              1     ??? (libTelephonyUtilDynamic.dylib + 195552) [0x1a3d8cbe0]
+                                1     ??? (libTelephonyUtilDynamic.dylib + 196200) [0x1a3d8ce68]
+                                  1     ??? (libTelephonyUtilDynamic.dylib + 195300) [0x1a3d8cae4]
+                                    1     ??? (libsystem_c.dylib + 146220) [0x19c916b2c]
+                                      1     ??? (libsystem_kernel.dylib + 28412) [0x1e4868efc]
+                                        1     <on behalf of CommCenter [98] (originated by CommCenter [98]), Effective Thread QoS Utility, Requested Thread QoS Utility>
+                98    ??? (ABMHelper + 604288) [0x1b7739880]
+                  98    ??? (ABMHelper + 932704) [0x1b7789b60]
+                    98    ??? (BasebandTraceHelper + 270000) [0x2550e5eb0]
+                      98    ??? (libdispatch.dylib + 79696) [0x19c8c0750]
+                        98    ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                          72    ??? (BasebandTraceHelper + 270504) [0x2550e60a8]
+                            72    ??? (libsystem_c.dylib + 146220) [0x19c916b2c]
+                              72    ??? (libsystem_kernel.dylib + 28412) [0x1e4868efc]
+                          26    ??? (BasebandTraceHelper + 270928) [0x2550e6250]
+                            26    ??? (libsystem_c.dylib + 146220) [0x19c916b2c]
+                              26    ??? (libsystem_kernel.dylib + 28412) [0x1e4868efc]
+                                1     <Effective Thread QoS Default>
+
+  Binary Images:
+           0x10406c000 -                ???  abm-helper                    <AA8EBB25-5216-3976-A7D4-B5652D7CE930>  /System/Library/PrivateFrameworks/ABMHelper.framework/Support/abm-helper
+           0x19c8ad000 -        0x19c8f2fff  libdispatch.dylib             <B8C15E69-D076-317D-9296-1279500738FC>  /usr/lib/system/libdispatch.dylib
+           0x19c8f3000 -        0x19c972ff3  libsystem_c.dylib             <1AD666A0-01A8-31C1-88B9-808915FB97B4>  /usr/lib/system/libsystem_c.dylib
+           0x1a3d5d000 -        0x1a3de1fff  libTelephonyUtilDynamic.dylib <C8A4A7A3-3098-3802-B4F9-E6DB290EF13F>  /usr/lib/libTelephonyUtilDynamic.dylib
+           0x1a5111000 -        0x1a519effb  libc++.1.dylib                <21502392-1CEC-3A57-8B48-43BD79BC264B>  /usr/lib/libc++.1.dylib
+           0x1b76a6000 -        0x1b7815fff  ABMHelper                     <1814F882-A65D-366E-8645-BFAB2197034F>  /System/Library/PrivateFrameworks/ABMHelper.framework/ABMHelper
+           0x1e4862000 -        0x1e489bffb  libsystem_kernel.dylib        <8D929B3B-D4D6-39BF-ADBB-BE59E928B332>  /usr/lib/system/libsystem_kernel.dylib
+           0x21810d000 -        0x218195ffb  libarchive.2.dylib            <DD5ADE85-DB3B-3303-8298-91276780325B>  /usr/lib/libarchive.2.dylib
+           0x21bd01000 -        0x21bd0dff3  libsystem_pthread.dylib       <FCC77EB0-558F-3703-9267-5419C4D33AE7>  /usr/lib/system/libsystem_pthread.dylib
+           0x2550a4000 -        0x2550f7fff  BasebandTraceHelper           <517C24BF-492A-3FC3-919B-EAA116ACEC40>  /System/Library/PrivateFrameworks/BasebandTraceHelper.framework/BasebandTraceHelper
+
+
+Powerstats for:   YouTubeMusic
+UUID:             6D9C6466-33BB-3088-849F-2C124A724151
+Path:             /private/var/containers/Bundle/Application/7F42F126-CEB3-4633-A99C-26C537A6E587/YouTubeMusic.app/YouTubeMusic
+Identifier:       com.google.ios.youtubemusic
+Version:          7.14.3 (7.14.3)
+Adam ID:          1017492454
+Is First Party:   No
+Beta Identifier:  77B36272-E409-41C6-90B5-E27AD3F6E81E
+Resource Coalition: 5491 samples 658, 855 samples 1246
+On Behalf Of:     207 samples nsurlsessiond [252] (185 samples originated by nsurlsessiond [252], 22 samples originated by YouTubeMusic [441]), 4 samples SpringBoard [34] (4 samples originated by SpringBoard [34])
+Architecture:     arm64
+Start time:       2024-08-22 12:53:54.819 -0500
+End time:         2024-08-23 08:17:22.305 -0500
+Num samples:      6346 (38%)
+Primary state:    3450 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Default, Requested Thread QoS User Initiated, Override Thread QoS Unspecified, p-core
+User Activity:    2973 samples Idle, 3373 samples Active
+Power Source:     6333 samples on Battery, 13 samples on AC
+  6346  ??? (libsystem_pthread.dylib + 5256) [0x21bd02488]
+    6260  ??? (libsystem_pthread.dylib + 19580) [0x21bd05c7c]
+      6260  ??? (libdispatch.dylib + 92836) [0x19c8c3aa4]
+        6260  ??? (libdispatch.dylib + 94808) [0x19c8c4258]
+          6260  ??? (libdispatch.dylib + 49632) [0x19c8b91e0]
+            6255  ??? (libdispatch.dylib + 46808) [0x19c8b86d8]
+              6255  ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                6246  ??? (CoreData + 161516) [0x19cb156ec]
+                  6201  ??? (YouTubeMusic + 18777772) [0x103de86ac]
+                    6201  ??? (CoreData + 201696) [0x19cb1f3e0]
+                      6201  ??? (CoreData + 792468) [0x19cbaf794]
+                        6201  ??? (CoreData + 74420) [0x19cb002b4]
+                          6201  ??? (libdispatch.dylib + 79696) [0x19c8c0750]
+                            6201  ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                              6201  ??? (CoreData + 765292) [0x19cba8d6c]
+                                6201  ??? (CoreData + 767496) [0x19cba9608]
+                                  6201  ??? (CoreData + 201696) [0x19cb1f3e0]
+                                    6201  ??? (CoreData + 70440) [0x19caff328]
+                                      6201  ??? (CoreData + 73412) [0x19caffec4]
+                                        6201  ??? (CoreData + 74652) [0x19cb0039c]
+                                          3392  ??? (libdispatch.dylib + 79696) [0x19c8c0750]
+                                            3392  ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                                              3392  ??? (CoreData + 126692) [0x19cb0cee4]
+                                                3392  ??? (CoreData + 127920) [0x19cb0d3b0]
+                                                  3392  ??? (CoreData + 1604604) [0x19cc75bfc]
+                                                    3392  ??? (CoreData + 226240) [0x19cb253c0]
+                                                      3392  ??? (CoreData + 143172) [0x19cb10f44]
+                                                        3392  ??? (CoreData + 143680) [0x19cb11140]
+                                                          3392  ??? (CoreData + 143992) [0x19cb11278]
+                                                            3392  ??? (CoreData + 144308) [0x19cb113b4]
+                                                              3392  ??? (libdispatch.dylib + 79696) [0x19c8c0750]
+                                                                3392  ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                                                                  3392  ??? (CoreData + 354120) [0x19cb44748]
+                                                                    3392  ??? (CoreData + 354320) [0x19cb44810]
+                                                                      3392  ??? (CoreData + 355048) [0x19cb44ae8]
+                                                                        3392  ??? (CoreData + 363164) [0x19cb46a9c]
+                                                                          3392  ??? (CoreData + 369420) [0x19cb4830c]
+                                                                            3343  ??? (CoreData + 120480) [0x19cb0b6a0]
+                                                                              3343  ??? (CoreData + 132864) [0x19cb0e700]
+                                                                                3343  ??? (CoreData + 17612) [0x19caf24cc]
+                                                                                  3343  ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                                                                    3330  ??? (libsqlite3.dylib + 197312) [0x1c1ea52c0]
+                                                                                      3218  ??? (libsqlite3.dylib + 306112) [0x1c1ebfbc0]
+                                                                                        3218  ??? (libsqlite3.dylib + 331728) [0x1c1ec5fd0]
+                                                                                          3218  ??? (libsqlite3.dylib + 651268) [0x1c1f14004]
+                                                                                            3218  ??? (libsqlite3.dylib + 635936) [0x1c1f10420]
+                                                                                              3218  ??? (libsqlite3.dylib + 627564) [0x1c1f0e36c]
+                                                                                                3218  ??? (libsqlite3.dylib + 348888) [0x1c1eca2d8]
+                                                                                                  3218  ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                                    3218  ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                                      1023  <Frontmost App, Effective Thread QoS User Initiated>
+                                                                                                      156   <Effective Thread QoS Background, e-core>
+                                                                                                      109   <e-core>
+                                                                                                      83    <Effective Thread QoS User Initiated>
+                                                                                                      56    <on behalf of nsurlsessiond [252] (originated by nsurlsessiond [252]), Frontmost App, Effective Thread QoS User Initiated>
+                                                                                                      38    <Frontmost App, Effective Thread QoS User Initiated, e-core>
+                                                                                                      36    <on behalf of nsurlsessiond [252] (originated by nsurlsessiond [252]), Effective Thread QoS Background, e-core>
+                                                                                                      20    <on behalf of nsurlsessiond [252] (originated by YouTubeMusic [441]), Effective Thread QoS Background, e-core>
+                                                                                                      18    <Frontmost App, Effective Thread QoS User Initiated, Requested Thread QoS Default>
+                                                                                                      16    <Effective Thread QoS Background, Requested Thread QoS Utility, e-core>
+                                                                                                      8     <Frontmost App, Effective Thread QoS User Initiated, Requested Thread QoS Utility>
+                                                                                                      7     <Effective Thread QoS User Initiated, e-core>
+                                                                                                      1     <Frontmost App, Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                                                                                                      1     <Frontmost App, Effective Thread QoS User Initiated, Requested Thread QoS Default, e-core>
+                                                                                      73    ??? (libsqlite3.dylib + 305032) [0x1c1ebf788]
+                                                                                        73    ??? (libsqlite3.dylib + 675528) [0x1c1f19ec8]
+                                                                                          73    ??? (libsqlite3.dylib + 376696) [0x1c1ed0f78]
+                                                                                            73    ??? (libsqlite3.dylib + 635936) [0x1c1f10420]
+                                                                                              73    ??? (libsqlite3.dylib + 627564) [0x1c1f0e36c]
+                                                                                                73    ??? (libsqlite3.dylib + 348888) [0x1c1eca2d8]
+                                                                                                  73    ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                                    73    ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                                      16    <Frontmost App, Effective Thread QoS User Initiated>
+                                                                                                      7     <Effective Thread QoS Background, e-core>
+                                                                                                      3     <Frontmost App, Effective Thread QoS User Initiated, Requested Thread QoS Utility>
+                                                                                                      2     <e-core>
+                                                                                                      1     <Effective Thread QoS Background, Requested Thread QoS Utility, e-core>
+                                                                                                      1     <on behalf of nsurlsessiond [252] (originated by nsurlsessiond [252]), Effective Thread QoS Background, e-core>
+                                                                                                      1     <Frontmost App, Effective Thread QoS User Initiated, Requested Thread QoS Default>
+                                                                                                      1     <Effective Thread QoS User Initiated>
+                                                                                                      1     <on behalf of nsurlsessiond [252] (originated by nsurlsessiond [252]), Frontmost App, Effective Thread QoS User Initiated>
+                                                                                      39    ??? (libsqlite3.dylib + 307900) [0x1c1ec02bc]
+                                                                                        39    ??? (libsqlite3.dylib + 300380) [0x1c1ebe55c]
+                                                                                          39    ??? (libsqlite3.dylib + 331728) [0x1c1ec5fd0]
+                                                                                            39    ??? (libsqlite3.dylib + 651268) [0x1c1f14004]
+                                                                                              39    ??? (libsqlite3.dylib + 635936) [0x1c1f10420]
+                                                                                                39    ??? (libsqlite3.dylib + 627564) [0x1c1f0e36c]
+                                                                                                  39    ??? (libsqlite3.dylib + 348888) [0x1c1eca2d8]
+                                                                                                    39    ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                                      39    ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                                        12    <Frontmost App, Effective Thread QoS User Initiated>
+                                                                                                        1     <Effective Thread QoS Background, e-core>
+                                                                                                        1     <on behalf of nsurlsessiond [252] (originated by nsurlsessiond [252]), Effective Thread QoS Background, e-core>
+                                                                                                        1     <Effective Thread QoS User Initiated, e-core>
+                                                                                    12    ??? (libsqlite3.dylib + 217200) [0x1c1eaa070]
+                                                                                      12    ??? (libsqlite3.dylib + 699508) [0x1c1f1fc74]
+                                                                                        12    ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                          12    ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                            12    <Frontmost App, Effective Thread QoS User Initiated>
+                                                                                    1     ??? (libsqlite3.dylib + 210416) [0x1c1ea85f0]
+                                                                                      1     ??? (libsqlite3.dylib + 701840) [0x1c1f20590]
+                                                                                        1     ??? (libsqlite3.dylib + 703248) [0x1c1f20b10]
+                                                                                          1     ??? (libsqlite3.dylib + 704472) [0x1c1f20fd8]
+                                                                                            1     ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                              1     ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                                1     <Frontmost App, Effective Thread QoS User Initiated>
+                                                                            49    ??? (CoreData + 120736) [0x19cb0b7a0]
+                                                                              49    ??? (CoreData + 17320) [0x19caf23a8]
+                                                                                49    ??? (CoreData + 17612) [0x19caf24cc]
+                                                                                  49    ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                                                                    39    ??? (libsqlite3.dylib + 222536) [0x1c1eab548]
+                                                                                      39    ??? (libsqlite3.dylib + 86872) [0x1c1e8a358]
+                                                                                        39    ??? (libsqlite3.dylib + 657088) [0x1c1f156c0]
+                                                                                          39    ??? (libsqlite3.dylib + 332476) [0x1c1ec62bc]
+                                                                                            39    ??? (libsqlite3.dylib + 334068) [0x1c1ec68f4]
+                                                                                              39    ??? (libsqlite3.dylib + 349208) [0x1c1eca418]
+                                                                                                39    ??? (libsystem_kernel.dylib + 37948) [0x1e486b43c]
+                                                                                                  10    <Frontmost App, Effective Thread QoS User Initiated>
+                                                                                                  2     <Effective Thread QoS Background, e-core>
+                                                                                                  1     <on behalf of nsurlsessiond [252] (originated by nsurlsessiond [252]), Effective Thread QoS Background, e-core>
+                                                                                                  1     <Frontmost App, Effective Thread QoS User Initiated, e-core>
+                                                                                                  1     <Frontmost App, Effective Thread QoS User Initiated, Requested Thread QoS Utility>
+                                                                                                  1     <on behalf of nsurlsessiond [252] (originated by nsurlsessiond [252]), Frontmost App, Effective Thread QoS User Initiated>
+                                                                                    10    ??? (libsqlite3.dylib + 207972) [0x1c1ea7c64]
+                                                                                      10    ??? (libsqlite3.dylib + 704744) [0x1c1f210e8]
+                                                                                        10    ??? (libsqlite3.dylib + 703248) [0x1c1f20b10]
+                                                                                          10    ??? (libsqlite3.dylib + 704472) [0x1c1f20fd8]
+                                                                                            10    ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                              10    ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                                10    <Frontmost App, Effective Thread QoS User Initiated>
+                                          2809  ??? (libdispatch.dylib + 79364) [0x19c8c0604]
+                                            2809  ??? (libdispatch.dylib + 80768) [0x19c8c0b80]
+                                              2809  ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                                                2809  ??? (CoreData + 126692) [0x19cb0cee4]
+                                                  2809  ??? (CoreData + 127920) [0x19cb0d3b0]
+                                                    2809  ??? (CoreData + 1604604) [0x19cc75bfc]
+                                                      2809  ??? (CoreData + 226240) [0x19cb253c0]
+                                                        2809  ??? (CoreData + 143172) [0x19cb10f44]
+                                                          2809  ??? (CoreData + 143680) [0x19cb11140]
+                                                            2809  ??? (CoreData + 143992) [0x19cb11278]
+                                                              2809  ??? (CoreData + 144308) [0x19cb113b4]
+                                                                2809  ??? (libdispatch.dylib + 79696) [0x19c8c0750]
+                                                                  2809  ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                                                                    2809  ??? (CoreData + 354120) [0x19cb44748]
+                                                                      2809  ??? (CoreData + 354320) [0x19cb44810]
+                                                                        2809  ??? (CoreData + 355048) [0x19cb44ae8]
+                                                                          2809  ??? (CoreData + 363164) [0x19cb46a9c]
+                                                                            2809  ??? (CoreData + 369420) [0x19cb4830c]
+                                                                              2778  ??? (CoreData + 120480) [0x19cb0b6a0]
+                                                                                2778  ??? (CoreData + 132864) [0x19cb0e700]
+                                                                                  2778  ??? (CoreData + 17612) [0x19caf24cc]
+                                                                                    2778  ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                                                                      2778  ??? (libsqlite3.dylib + 197312) [0x1c1ea52c0]
+                                                                                        2705  ??? (libsqlite3.dylib + 306112) [0x1c1ebfbc0]
+                                                                                          2705  ??? (libsqlite3.dylib + 331728) [0x1c1ec5fd0]
+                                                                                            2705  ??? (libsqlite3.dylib + 651268) [0x1c1f14004]
+                                                                                              2705  ??? (libsqlite3.dylib + 635936) [0x1c1f10420]
+                                                                                                2705  ??? (libsqlite3.dylib + 627564) [0x1c1f0e36c]
+                                                                                                  2705  ??? (libsqlite3.dylib + 348888) [0x1c1eca2d8]
+                                                                                                    2705  ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                                      2705  ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                                        973   <Frontmost App, Effective Thread QoS User Initiated>
+                                                                                                        103   <Effective Thread QoS Background, e-core>
+                                                                                                        58    <on behalf of nsurlsessiond [252] (originated by nsurlsessiond [252]), Frontmost App, Effective Thread QoS User Initiated>
+                                                                                                        28    <on behalf of nsurlsessiond [252] (originated by nsurlsessiond [252]), Effective Thread QoS Background, e-core>
+                                                                                                        17    <e-core>
+                                                                                                        14    <Frontmost App, Effective Thread QoS User Initiated, e-core>
+                                                                                                        11    <Effective Thread QoS User Initiated>
+                                                                                                        9     <Frontmost App, Effective Thread QoS User Initiated, Requested Thread QoS Default>
+                                                                                                        3     <Effective Thread QoS User Initiated, e-core>
+                                                                                                        1     <Frontmost App, Effective Thread QoS User Initiated, Requested Thread QoS Default, e-core>
+                                                                                        47    ??? (libsqlite3.dylib + 305032) [0x1c1ebf788]
+                                                                                          47    ??? (libsqlite3.dylib + 675528) [0x1c1f19ec8]
+                                                                                            47    ??? (libsqlite3.dylib + 376696) [0x1c1ed0f78]
+                                                                                              47    ??? (libsqlite3.dylib + 635936) [0x1c1f10420]
+                                                                                                47    ??? (libsqlite3.dylib + 627564) [0x1c1f0e36c]
+                                                                                                  47    ??? (libsqlite3.dylib + 348888) [0x1c1eca2d8]
+                                                                                                    47    ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                                      47    ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                                        13    <Frontmost App, Effective Thread QoS User Initiated>
+                                                                                                        2     <Effective Thread QoS Background, e-core>
+                                                                                                        1     <e-core>
+                                                                                        26    ??? (libsqlite3.dylib + 307900) [0x1c1ec02bc]
+                                                                                          26    ??? (libsqlite3.dylib + 300380) [0x1c1ebe55c]
+                                                                                            26    ??? (libsqlite3.dylib + 331728) [0x1c1ec5fd0]
+                                                                                              26    ??? (libsqlite3.dylib + 651268) [0x1c1f14004]
+                                                                                                26    ??? (libsqlite3.dylib + 635936) [0x1c1f10420]
+                                                                                                  26    ??? (libsqlite3.dylib + 627564) [0x1c1f0e36c]
+                                                                                                    26    ??? (libsqlite3.dylib + 348888) [0x1c1eca2d8]
+                                                                                                      26    ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                                        26    ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                                          11    <Frontmost App, Effective Thread QoS User Initiated>
+                                                                                                          2     <Effective Thread QoS Background, e-core>
+                                                                                                          1     <on behalf of nsurlsessiond [252] (originated by nsurlsessiond [252]), Frontmost App, Effective Thread QoS User Initiated>
+                                                                              31    ??? (CoreData + 120736) [0x19cb0b7a0]
+                                                                                31    ??? (CoreData + 17320) [0x19caf23a8]
+                                                                                  31    ??? (CoreData + 17612) [0x19caf24cc]
+                                                                                    31    ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                                                                      31    ??? (libsqlite3.dylib + 222536) [0x1c1eab548]
+                                                                                        31    ??? (libsqlite3.dylib + 86872) [0x1c1e8a358]
+                                                                                          31    ??? (libsqlite3.dylib + 657088) [0x1c1f156c0]
+                                                                                            31    ??? (libsqlite3.dylib + 332476) [0x1c1ec62bc]
+                                                                                              31    ??? (libsqlite3.dylib + 334068) [0x1c1ec68f4]
+                                                                                                31    ??? (libsqlite3.dylib + 349208) [0x1c1eca418]
+                                                                                                  31    ??? (libsystem_kernel.dylib + 37948) [0x1e486b43c]
+                                                                                                    13    <Frontmost App, Effective Thread QoS User Initiated>
+                                                                                                    1     <Effective Thread QoS Background, e-core>
+                                                                                                    1     <Frontmost App, Effective Thread QoS User Initiated, e-core>
+                  45    ??? (YouTubeMusic + 34673412) [0x104d11304]
+                    45    ??? (CoreData + 789136) [0x19cbaea90]
+                      45    ??? (CoreData + 70440) [0x19caff328]
+                        45    ??? (CoreData + 73412) [0x19caffec4]
+                          45    ??? (CoreData + 74652) [0x19cb0039c]
+                            45    ??? (libdispatch.dylib + 79696) [0x19c8c0750]
+                              45    ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                                45    ??? (CoreData + 126692) [0x19cb0cee4]
+                                  45    ??? (CoreData + 127920) [0x19cb0d3b0]
+                                    33    ??? (CoreData + 1609656) [0x19cc76fb8]
+                                      33    ??? (CoreData + 224660) [0x19cb24d94]
+                                        33    ??? (CoreData + 143172) [0x19cb10f44]
+                                          33    ??? (CoreData + 143680) [0x19cb11140]
+                                            33    ??? (CoreData + 143992) [0x19cb11278]
+                                              33    ??? (CoreData + 144308) [0x19cb113b4]
+                                                33    ??? (libdispatch.dylib + 79696) [0x19c8c0750]
+                                                  33    ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                                                    33    ??? (CoreData + 354120) [0x19cb44748]
+                                                      33    ??? (CoreData + 354320) [0x19cb44810]
+                                                        33    ??? (CoreData + 355048) [0x19cb44ae8]
+                                                          33    ??? (CoreData + 431988) [0x19cb57774]
+                                                            32    ??? (CoreData + 561476) [0x19cb77144]
+                                                              32    ??? (CoreData + 566496) [0x19cb784e0]
+                                                                32    ??? (CoreData + 17612) [0x19caf24cc]
+                                                                  25    ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                                                    25    ??? (libsqlite3.dylib + 222876) [0x1c1eab69c]
+                                                                      25    ??? (libsqlite3.dylib + 88076) [0x1c1e8a80c]
+                                                                        25    ??? (libsqlite3.dylib + 245984) [0x1c1eb10e0]
+                                                                          25    ??? (libsqlite3.dylib + 247064) [0x1c1eb1518]
+                                                                            25    ??? (libsqlite3.dylib + 310152) [0x1c1ec0b88]
+                                                                              25    ??? (libsqlite3.dylib + 629664) [0x1c1f0eba0]
+                                                                                25    ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                  25    ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                    5     <e-core>
+                                                                                    2     <Effective Thread QoS Background, e-core>
+                                                                                    2     <Frontmost App, Effective Thread QoS User Initiated, e-core>
+                                                                                    2     <Requested Thread QoS Utility>
+                                                                                    2     <Frontmost App, Effective Thread QoS User Initiated>
+                                                                                    1     <Requested Thread QoS Default, e-core>
+                                                                                    1     <on behalf of nsurlsessiond [252] (originated by nsurlsessiond [252]), Frontmost App, Effective Thread QoS User Initiated, e-core>
+                                                                                    1     <on behalf of SpringBoard [34] (originated by SpringBoard [34])>
+                                                                                    1     <on behalf of SpringBoard [34] (originated by SpringBoard [34]), Frontmost App, Effective Thread QoS User Initiated>
+                                                                  7     ??? (libsqlite3.dylib + 179532) [0x1c1ea0d4c]
+                                                                    7     ??? (libsqlite3.dylib + 311892) [0x1c1ec1254]
+                                                                      7     ??? (libsqlite3.dylib + 520240) [0x1c1ef4030]
+                                                                        7     ??? (libsqlite3.dylib + 1060544) [0x1c1f77ec0]
+                                                                          5     ??? (libsqlite3.dylib + 383308) [0x1c1ed294c]
+                                                                            5     ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                              5     ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                2     <on behalf of nsurlsessiond [252] (originated by YouTubeMusic [441]), Effective Thread QoS Background, e-core>
+                                                                                1     <Requested Thread QoS Utility>
+                                                                                1     <Frontmost App, Effective Thread QoS User Initiated, Requested Thread QoS Utility>
+                                                                                1     <Requested Thread QoS Default>
+                                                                          2     ??? (libsqlite3.dylib + 382452) [0x1c1ed25f4]
+                                                                            2     ??? (libsqlite3.dylib + 311304) [0x1c1ec1008]
+                                                                              2     ??? (libsystem_kernel.dylib + 26556) [0x1e48687bc]
+                                                                                1     <Frontmost App, Effective Thread QoS User Initiated, e-core>
+                                                                                1     <Frontmost App, Effective Thread QoS User Initiated>
+                                                            1     ??? (CoreData + 562860) [0x19cb776ac]
+                                                              1     ??? (CoreData + 568968) [0x19cb78e88]
+                                                                1     ??? (CoreData + 914852) [0x19cbcd5a4]
+                                                                  1     ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                                                    1     ??? (libsqlite3.dylib + 222536) [0x1c1eab548]
+                                                                      1     ??? (libsqlite3.dylib + 88076) [0x1c1e8a80c]
+                                                                        1     ??? (libsqlite3.dylib + 245984) [0x1c1eb10e0]
+                                                                          1     ??? (libsqlite3.dylib + 247064) [0x1c1eb1518]
+                                                                            1     ??? (libsqlite3.dylib + 310152) [0x1c1ec0b88]
+                                                                              1     ??? (libsqlite3.dylib + 629664) [0x1c1f0eba0]
+                                                                                1     ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                  1     ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                    1     <Frontmost App, Effective Thread QoS User Initiated>
+                                    12    ??? (CoreData + 1609624) [0x19cc76f98]
+                                      12    ??? (CoreData + 467264) [0x19cb60140]
+                                        12    ??? (CoreData + 714204) [0x19cb9c5dc]
+                                          12    ??? (CoreData + 143172) [0x19cb10f44]
+                                            12    ??? (CoreData + 143680) [0x19cb11140]
+                                              12    ??? (CoreData + 143992) [0x19cb11278]
+                                                12    ??? (CoreData + 144308) [0x19cb113b4]
+                                                  12    ??? (libdispatch.dylib + 79696) [0x19c8c0750]
+                                                    12    ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                                                      12    ??? (CoreData + 354120) [0x19cb44748]
+                                                        12    ??? (CoreData + 354320) [0x19cb44810]
+                                                          12    ??? (CoreData + 355048) [0x19cb44ae8]
+                                                            12    ??? (CoreData + 217896) [0x19cb23328]
+                                                              12    ??? (CoreData + 556572) [0x19cb75e1c]
+                                                                12    ??? (CoreData + 566496) [0x19cb784e0]
+                                                                  12    ??? (CoreData + 17612) [0x19caf24cc]
+                                                                    12    ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                                                      12    ??? (libsqlite3.dylib + 222876) [0x1c1eab69c]
+                                                                        12    ??? (libsqlite3.dylib + 88076) [0x1c1e8a80c]
+                                                                          12    ??? (libsqlite3.dylib + 245984) [0x1c1eb10e0]
+                                                                            12    ??? (libsqlite3.dylib + 247064) [0x1c1eb1518]
+                                                                              12    ??? (libsqlite3.dylib + 310152) [0x1c1ec0b88]
+                                                                                11    ??? (libsqlite3.dylib + 629664) [0x1c1f0eba0]
+                                                                                  11    ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                                                    11    ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                                      3     <e-core>
+                                                                                      3     <Effective Thread QoS User Initiated>
+                                                                                      1     <Effective Thread QoS Background, e-core>
+                                                                                1     ??? (libsqlite3.dylib + 630988) [0x1c1f0f0cc]
+                                                                                  1     ??? (libsystem_kernel.dylib + 37544) [0x1e486b2a8]
+                8     ??? (libdispatch.dylib + 9072) [0x19c8af370]
+                  2     ??? (YouTubeMusic + 39015396) [0x1051353e4]
+                    2     ??? (YouTubeMusic + 38984480) [0x10512db20]
+                      2     ??? (YouTubeMusic + 38989204) [0x10512ed94]
+                        2     ??? (Foundation + 5995704) [0x193d9fcb8]
+                          2     ??? (Foundation + 6044780) [0x193dabc6c]
+                            1     ??? (Foundation + 6018948) [0x193da5784]
+                              1     ??? (Foundation + 5872268) [0x193d81a8c]
+                                1     ??? (Foundation + 6031396) [0x193da8824]
+                                  1     ??? (libsystem_kernel.dylib + 24888) [0x1e4868138]
+                                    1     <Frontmost App, Effective Thread QoS User Initiated>
+                            1     ??? (Foundation + 6017736) [0x193da52c8]
+                              1     ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                                1     <Frontmost App, Effective Thread QoS User Initiated, e-core>
+                  2     ??? (YouTubeMusic + 27898400) [0x10469b220]
+                    2     ??? (Foundation + 2321596) [0x193a1ecbc]
+                      2     ??? (Foundation + 5333488) [0x193cfe1f0]
+                        2     ??? (Foundation + 5867604) [0x193d80854]
+                          2     ??? (Foundation + 3325172) [0x193b13cf4]
+                            2     ??? (libremovefile.dylib + 5336) [0x238ef74d8]
+                              2     ??? (libremovefile.dylib + 5868) [0x238ef76ec]
+                                2     ??? (libsystem_kernel.dylib + 28412) [0x1e4868efc]
+                                  1     <Effective Thread QoS Background, Requested Thread QoS Utility, e-core>
+                                  1     <Frontmost App, Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                  2     ??? (YouTubeMusic + 25442756) [0x1044439c4]
+                    1     ??? (YouTubeMusic + 25410136) [0x10443ba58]
+                      1     ??? (YouTubeMusic + 25377724) [0x104433bbc]
+                        1     ??? (YouTubeMusic + 25558360) [0x10445fd58]
+                          1     ??? (YouTubeMusic + 25306128) [0x104422410]
+                            1     ??? (YouTubeMusic + 25514408) [0x1044551a8]
+                              1     ??? (YouTubeMusic + 25560992) [0x1044607a0]
+                                1     ??? (YouTubeMusic + 25561328) [0x1044608f0]
+                                  1     ??? (YouTubeMusic + 25312456) [0x104423cc8]
+                                    1     ??? (YouTubeMusic + 25512544) [0x104454a60]
+                                      1     ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                        1     ??? (libsqlite3.dylib + 196316) [0x1c1ea4edc]
+                                          1     ??? (libsqlite3.dylib + 292136) [0x1c1ebc528]
+                                            1     ??? (libsqlite3.dylib + 293236) [0x1c1ebc974]
+                                              1     ??? (libsqlite3.dylib + 645464) [0x1c1f12958]
+                                                1     ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                  1     ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                    1     <on behalf of SpringBoard [34] (originated by SpringBoard [34]), Frontmost App, Effective Thread QoS Background, Requested Thread QoS Background, e-core>
+                    1     ??? (YouTubeMusic + 25383796) [0x104435374]
+                      1     ??? (YouTubeMusic + 25384104) [0x1044354a8]
+                        1     ??? (YouTubeMusic + 25384472) [0x104435618]
+                          1     ??? (YouTubeMusic + 25573872) [0x1044639f0]
+                            1     ??? (YouTubeMusic + 25574936) [0x104463e18]
+                              1     ??? (YouTubeMusic + 25575600) [0x1044640b0]
+                                1     ??? (YouTubeMusic + 25306128) [0x104422410]
+                                  1     ??? (YouTubeMusic + 25514448) [0x1044551d0]
+                                    1     ??? (YouTubeMusic + 25514796) [0x10445532c]
+                                      1     ??? (libsqlite3.dylib + 34764) [0x1c1e7d7cc]
+                                        1     ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                          1     ??? (libsqlite3.dylib + 222876) [0x1c1eab69c]
+                                            1     ??? (libsqlite3.dylib + 88076) [0x1c1e8a80c]
+                                              1     ??? (libsqlite3.dylib + 245984) [0x1c1eb10e0]
+                                                1     ??? (libsqlite3.dylib + 247064) [0x1c1eb1518]
+                                                  1     ??? (libsqlite3.dylib + 310188) [0x1c1ec0bac]
+                                                    1     ??? (libsqlite3.dylib + 646608) [0x1c1f12dd0]
+                                                      1     ??? (libsqlite3.dylib + 293236) [0x1c1ebc974]
+                                                        1     ??? (libsqlite3.dylib + 645464) [0x1c1f12958]
+                                                          1     ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                            1     ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                              1     <on behalf of SpringBoard [34] (originated by SpringBoard [34]), Effective Thread QoS Background, Requested Thread QoS Background, e-core>
+                  1     ??? (YouTubeMusic + 38975280) [0x10512b730]
+                    1     ??? (Foundation + 2321596) [0x193a1ecbc]
+                      1     ??? (Foundation + 5333488) [0x193cfe1f0]
+                        1     ??? (Foundation + 5867604) [0x193d80854]
+                          1     ??? (Foundation + 3325172) [0x193b13cf4]
+                            1     ??? (libremovefile.dylib + 5336) [0x238ef74d8]
+                              1     ??? (libremovefile.dylib + 5868) [0x238ef76ec]
+                                1     ??? (libsystem_kernel.dylib + 28412) [0x1e4868efc]
+                                  1     <Frontmost App, Effective Thread QoS Background, Requested Thread QoS Background, e-core>
+                  1     ??? (YouTubeMusic + 29350720) [0x1047fdb40]
+                    1     ??? (YouTubeMusic + 39881164) [0x1052089cc]
+                      1     ??? (YouTubeMusic + 47000348) [0x1058d2b1c]
+                        1     ??? (YouTubeMusic + 66662892) [0x106b931ec]
+                          1     ??? (YouTubeMusic + 66786176) [0x106bb1380]
+                            1     ??? (YouTubeMusic + 66790188) [0x106bb232c]
+                              1     ??? (YouTubeMusic + 66670200) [0x106b94e78]
+                                1     ??? (YouTubeMusic + 66661956) [0x106b92e44]
+                                  1     ??? (YouTubeMusic + 66690408) [0x106b99d68]
+                                    1     ??? (YouTubeMusic + 66694588) [0x106b9adbc]
+                                      1     ??? (YouTubeMusic + 66728752) [0x106ba3330]
+                                        1     ??? (libsystem_c.dylib + 51948) [0x19c8ffaec]
+                                          1     ??? (libsystem_c.dylib + 21508) [0x19c8f8404]
+                                            1     ??? (libsystem_c.dylib + 57124) [0x19c900f24]
+                                              1     ??? (libsystem_kernel.dylib + 32240) [0x1e4869df0]
+                                                1     <Frontmost App, Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                1     ??? (libdispatch.dylib + 78568) [0x19c8c02e8]
+                  1     ??? (CFNetwork + 673116) [0x19612e55c]
+                    1     ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                      1     ??? (libsqlite3.dylib + 222536) [0x1c1eab548]
+                        1     ??? (libsqlite3.dylib + 88076) [0x1c1e8a80c]
+                          1     ??? (libsqlite3.dylib + 245984) [0x1c1eb10e0]
+                            1     ??? (libsqlite3.dylib + 247064) [0x1c1eb1518]
+                              1     ??? (libsqlite3.dylib + 310152) [0x1c1ec0b88]
+                                1     ??? (libsqlite3.dylib + 629664) [0x1c1f0eba0]
+                                  1     ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                    1     ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                      1     <Effective Thread QoS Background, Requested Thread QoS Utility, e-core>
+            5     ??? (libdispatch.dylib + 46432) [0x19c8b8560]
+              5     ??? (libdispatch.dylib + 49684) [0x19c8b9214]
+                5     ??? (libdispatch.dylib + 46808) [0x19c8b86d8]
+                  5     ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                    5     ??? (libdispatch.dylib + 9072) [0x19c8af370]
+                      4     ??? (libsystem_kernel.dylib + 37948) [0x1e486b43c]
+                        4     <e-core>
+                      1     ??? (libdispatch.dylib + 214388) [0x19c8e1574]
+                        1     ??? (YouTubeMusic + 28488104) [0x10472b1a8]
+                          1     ??? (libsystem_kernel.dylib + 24888) [0x1e4868138]
+                            1     <Requested Thread QoS Default, e-core>
+    86    ??? (libsystem_pthread.dylib + 19520) [0x21bd05c40]
+      86    ??? (libdispatch.dylib + 91536) [0x19c8c3590]
+        56    ??? (libdispatch.dylib + 89952) [0x19c8c2f60]
+          56    ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+            55    ??? (libdispatch.dylib + 9072) [0x19c8af370]
+              42    ??? (YouTubeMusic + 17404588) [0x103c992ac]
+                42    ??? (Foundation + 5995704) [0x193d9fcb8]
+                  42    ??? (Foundation + 6044780) [0x193dabc6c]
+                    40    ??? (Foundation + 6017736) [0x193da52c8]
+                      39    ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                        32    <Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                        7     <Frontmost App, Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                      1     ??? (libsystem_kernel.dylib + 37272) [0x1e486b198]
+                        1     <Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                    2     ??? (Foundation + 6018948) [0x193da5784]
+                      2     ??? (Foundation + 5872268) [0x193d81a8c]
+                        2     ??? (Foundation + 6031396) [0x193da8824]
+                          2     ??? (libsystem_kernel.dylib + 24888) [0x1e4868138]
+                            2     <Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+              11    ??? (YouTubeMusic + 18599992) [0x103dbd038]
+                11    ??? (YouTubeMusic + 34840152) [0x104d39e58]
+                  11    ??? (YouTubeMusic + 34769476) [0x104d28a44]
+                    11    ??? (YouTubeMusic + 34811676) [0x104d32f1c]
+                      11    ??? (YouTubeMusic + 34770520) [0x104d28e58]
+                        11    ??? (YouTubeMusic + 34846544) [0x104d3b750]
+                          11    ??? (libdispatch.dylib + 79696) [0x19c8c0750]
+                            11    ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                              6     ??? (YouTubeMusic + 34846644) [0x104d3b7b4]
+                                6     ??? (YouTubeMusic + 34771472) [0x104d29210]
+                                  6     ??? (YouTubeMusic + 34840280) [0x104d39ed8]
+                                    6     ??? (CoreFoundation + 152224) [0x194bda2a0]
+                                      6     ??? (CoreFoundation + 152624) [0x194bda430]
+                                        6     ??? (YouTubeMusic + 34840504) [0x104d39fb8]
+                                          6     ??? (YouTubeMusic + 34772332) [0x104d2956c]
+                                            4     ??? (YouTubeMusic + 34804408) [0x104d312b8]
+                                              4     ??? (YouTubeMusic + 34741268) [0x104d21c14]
+                                                4     ??? (YouTubeMusic + 34862852) [0x104d3f704]
+                                                  4     ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                                    2     ??? (libsqlite3.dylib + 207004) [0x1c1ea789c]
+                                                      2     ??? (libsqlite3.dylib + 306856) [0x1c1ebfea8]
+                                                        2     ??? (libsqlite3.dylib + 293236) [0x1c1ebc974]
+                                                          2     ??? (libsqlite3.dylib + 645464) [0x1c1f12958]
+                                                            2     ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                              2     ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                2     <Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                                                    2     ??? (libsqlite3.dylib + 196316) [0x1c1ea4edc]
+                                                      2     ??? (libsqlite3.dylib + 292136) [0x1c1ebc528]
+                                                        2     ??? (libsqlite3.dylib + 293236) [0x1c1ebc974]
+                                                          2     ??? (libsqlite3.dylib + 645464) [0x1c1f12958]
+                                                            2     ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                              2     ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                2     <Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                                            1     ??? (YouTubeMusic + 34804108) [0x104d3118c]
+                                              1     ??? (YouTubeMusic + 34863668) [0x104d3fa34]
+                                                1     ??? (YouTubeMusic + 34862852) [0x104d3f704]
+                                                  1     ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                                    1     ??? (libsqlite3.dylib + 197312) [0x1c1ea52c0]
+                                                      1     ??? (libsqlite3.dylib + 306856) [0x1c1ebfea8]
+                                                        1     ??? (libsqlite3.dylib + 293740) [0x1c1ebcb6c]
+                                                          1     ??? (libsqlite3.dylib + 346700) [0x1c1ec9a4c]
+                                                            1     ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                              1     ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                1     <Effective Thread QoS Background, Requested Thread QoS Utility, e-core>
+                                            1     ??? (YouTubeMusic + 34783628) [0x104d2c18c]
+                                              1     ??? (YouTubeMusic + 34863668) [0x104d3fa34]
+                                                1     ??? (YouTubeMusic + 34862852) [0x104d3f704]
+                                                  1     ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                                    1     ??? (libsqlite3.dylib + 196316) [0x1c1ea4edc]
+                                                      1     ??? (libsqlite3.dylib + 292136) [0x1c1ebc528]
+                                                        1     ??? (libsqlite3.dylib + 293740) [0x1c1ebcb6c]
+                                                          1     ??? (libsqlite3.dylib + 346700) [0x1c1ec9a4c]
+                                                            1     ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                              1     ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                                1     <Effective Thread QoS Background, Requested Thread QoS Utility, e-core>
+                              5     ??? (YouTubeMusic + 34846672) [0x104d3b7d0]
+                                5     ??? (YouTubeMusic + 34864656) [0x104d3fe10]
+                                  5     ??? (YouTubeMusic + 34863668) [0x104d3fa34]
+                                    5     ??? (YouTubeMusic + 34862852) [0x104d3f704]
+                                      5     ??? (libsqlite3.dylib + 177992) [0x1c1ea0748]
+                                        5     ??? (libsqlite3.dylib + 222876) [0x1c1eab69c]
+                                          5     ??? (libsqlite3.dylib + 88076) [0x1c1e8a80c]
+                                            5     ??? (libsqlite3.dylib + 245984) [0x1c1eb10e0]
+                                              5     ??? (libsqlite3.dylib + 247064) [0x1c1eb1518]
+                                                5     ??? (libsqlite3.dylib + 310256) [0x1c1ec0bf0]
+                                                  5     ??? (libsqlite3.dylib + 348888) [0x1c1eca2d8]
+                                                    5     ??? (libsqlite3.dylib + 310888) [0x1c1ec0e68]
+                                                      5     ??? (libsystem_kernel.dylib + 30356) [0x1e4869694]
+                                                        2     <Effective Thread QoS Background, Requested Thread QoS Utility, e-core>
+                                                        2     <Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                                                        1     <Frontmost App, Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+              2     ??? (YouTubeMusic + 18629176) [0x103dc4238]
+                2     ??? (Foundation + 5995704) [0x193d9fcb8]
+                  2     ??? (Foundation + 6044780) [0x193dabc6c]
+                    2     ??? (Foundation + 6017736) [0x193da52c8]
+                      2     ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                        1     <Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+                        1     <Frontmost App, Effective Thread QoS Utility, Requested Thread QoS Utility, e-core>
+            1     ??? (libdispatch.dylib + 210768) [0x19c8e0750]
+              1     ??? (libsystem_kernel.dylib + 32240) [0x1e4869df0]
+                1     <Requested Thread QoS Default, e-core>
+        30    ??? (libdispatch.dylib + 89484) [0x19c8c2d8c]
+          29    ??? (libdispatch.dylib + 29208) [0x19c8b4218]
+            29    ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+              29    ??? (libdispatch.dylib + 210768) [0x19c8e0750]
+                28    ??? (libsystem_kernel.dylib + 32240) [0x1e4869df0]
+                  15    <e-core>
+                  9     <Frontmost App, Effective Thread QoS User Initiated, e-core>
+                  3     <Frontmost App, Effective Thread QoS User Initiated>
+                  1     <Effective Thread QoS Background, e-core>
+                1     ??? (libdispatch.dylib + 209288) [0x19c8e0188]
+                  1     ??? (libdispatch.dylib + 197252) [0x19c8dd284]
+                    1     ??? (libsystem_kernel.dylib + 24388) [0x1e4867f44]
+                      1     <Frontmost App, Effective Thread QoS User Initiated, e-core>
+          1     ??? (libdispatch.dylib + 27568) [0x19c8b3bb0]
+            1     ??? (libdispatch.dylib + 30080) [0x19c8b4580]
+              1     ??? (libdispatch.dylib + 16592) [0x19c8b10d0]
+                1     ??? (libdispatch.dylib + 9072) [0x19c8af370]
+                  1     ??? (YouTubeMusic + 39015976) [0x105135628]
+                    1     ??? (YouTubeMusic + 38984480) [0x10512db20]
+                      1     ??? (YouTubeMusic + 38989204) [0x10512ed94]
+                        1     ??? (Foundation + 5995704) [0x193d9fcb8]
+                          1     ??? (Foundation + 6044780) [0x193dabc6c]
+                            1     ??? (Foundation + 6017736) [0x193da52c8]
+                              1     ??? (libsystem_kernel.dylib + 23744) [0x1e4867cc0]
+                                1     <Frontmost App, Effective Thread QoS User Initiated>
+
+  Binary Images:
+           0x102c00000 -                ???  com.google.ios.youtubemusic 7.14.3 (7.14.3) <6D9C6466-33BB-3088-849F-2C124A724151>  /private/var/containers/Bundle/Application/7F42F126-CEB3-4633-A99C-26C537A6E587/YouTubeMusic.app/YouTubeMusic
+           0x1937e8000 -        0x194506fff  Foundation                                  <4128867E-FE6F-346B-94E8-7EA49B0983B7>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x194bb5000 -        0x1950fafff  CoreFoundation                              <80D8C862-DBD0-3D99-850B-0601BD6F3860>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x19608a000 -        0x19644cfff  CFNetwork                                   <FDCAA69A-A636-3B1B-8363-D20534411AA6>  /System/Library/Frameworks/CFNetwork.framework/CFNetwork
+           0x19c8ad000 -        0x19c8f2fff  libdispatch.dylib                           <B8C15E69-D076-317D-9296-1279500738FC>  /usr/lib/system/libdispatch.dylib
+           0x19c8f3000 -        0x19c972ff3  libsystem_c.dylib                           <1AD666A0-01A8-31C1-88B9-808915FB97B4>  /usr/lib/system/libsystem_c.dylib
+           0x19caee000 -        0x19ce76fff  CoreData                                    <E8FCE3F2-E6CF-3100-BCD1-D59DB9303428>  /System/Library/Frameworks/CoreData.framework/CoreData
+           0x1c1e75000 -        0x1c1ff5ff3  libsqlite3.dylib                            <27D9421E-C13A-3E09-A2C4-A5033278CBC4>  /usr/lib/libsqlite3.dylib
+           0x1e4862000 -        0x1e489bffb  libsystem_kernel.dylib                      <8D929B3B-D4D6-39BF-ADBB-BE59E928B332>  /usr/lib/system/libsystem_kernel.dylib
+           0x21bd01000 -        0x21bd0dff3  libsystem_pthread.dylib                     <FCC77EB0-558F-3703-9267-5419C4D33AE7>  /usr/lib/system/libsystem_pthread.dylib
+           0x238ef6000 -        0x238ef8fff  libremovefile.dylib                         <35D4FEFA-CF03-3AAA-87FF-7151E53DB6FA>  /usr/lib/system/libremovefile.dylib
